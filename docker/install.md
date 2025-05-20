@@ -17,6 +17,8 @@
 ### Kali 安裝 Docker
 
 ``` bash
+sudo rm -f /etc/apt/trusted.gpg.d/kali-archive-keyring.gpg
+sudo wget -qO - https://archive.kali.org/archive-key.asc | sudo tee /etc/apt/trusted.gpg.d/kali-archive-keyring.asc 
 sudo apt update
 sudo apt install -y docker.io
 sudo systemctl enable docker --now
