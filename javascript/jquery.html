@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- todo: 引用 jquery npm cdn 
+    1. 有一個 按鈕 id = btnid , class = btnclass 
+    2. 有一個input id = inputtext , type = text
+    3. 當按鈕被點擊時 , input 的值會被改成 "Hello World"
+    
+    -->
+</head>
+<body>
+    <button id="btnid">Click ID</button>
+    <button class="btnclass">Click CLASS</button>
+    <button id="XSS">Click XSS</button>
+    <div id="xssresult"></div>
+    <input id="inputtext" type="text">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#btnid").click(function() {
+                $("#inputtext").val("Hello World By ID");
+            });
+            $(".btnclass").click(function() {
+                $("#inputtext").val("Hello World By CLASS");
+            });
+            $("#XSS").click(function() {
+                $("#xssresult").html("<script>alert(document.cookie);<\/script>");
+            });
+        });
+    </script>
+</body>
+</html>

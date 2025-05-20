@@ -23,6 +23,15 @@
     </div>
     
     <script>
+        let ulliElement = document.getElementsByTagName("li"); // 取得所有的 li 元素
+        ulliElement[0].style.color = "red"; // 設定第一個 li 元素的顏色為紅色
+        ulliElement[0].innerText = "todo red"; 
+        ulliElement[1].style.color = "green"; // 設定第二個 li 元素的顏色為綠色
+        ulliElement[1].innerText = "todo green";
+        ulliElement[2].style.color = "blue"; // 設定第三個 li 元素的顏色為藍色
+        ulliElement[2].innerText = "todo blue";
+        ulliElement[3].style.color = "yellow"; // 設定第四個 li 元素的顏色為黃色
+        ulliElement[3].innerText = "todo yellow";
 
         let element = document.getElementById("myElement");
         // TODO: 如何取得 h2 的 element 

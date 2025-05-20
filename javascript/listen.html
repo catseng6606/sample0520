@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn"">Click</button>
+    <script>
+        // todo: 1. 事件監聽
+        // 監聽 id=btn 的 click 事件
+        // 然後 alert click 若 滑鼠滑到按鈕上 則 alert up
+        // listener 事件 = 壓著不放 則 alert press
+
+        let btn = document.getElementById("btn");
+        btn.addEventListener("click", function() {
+            alert("click");
+        });
+        btn.addEventListener("mouseover", function() {
+            alert("up");
+        });
+        btn.addEventListener("mousedown", function() {
+            alert("press");
+        });
+
+    </script>
+</body>
+</html>
