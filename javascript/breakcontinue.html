@@ -14,10 +14,16 @@
         for (let i = 0; i < count; i++) { // 初始 ; 條件 ; 更新
             if (numbers[i] % 2 == 0) { // 偶數
                 document.write(numbers[i] + "是偶數<br>");
-                continue; // 跳過本次迴圈
-            } else {
-                document.write(numbers[i] + "是奇數<br>");  
-            }            
+                document.write(numbers[i] + " "+ i.toString() + " before continue<br>");
+                // continue; // 跳過本次迴圈
+                document.write(numbers[i] + " "+ i.toString() + " after continue<br>");
+                if (numbers[i] == 6) {
+                    break;
+                }
+                
+            } 
+            //document.write(numbers[i] + "是奇數<br>");  
+                       
         }
   
 
