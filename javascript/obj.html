@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <p style="color:blue" id="demo1">Hello World</p>
+    <p style="color:red" id="demo2">Hello World</p>
+
+    <script>
+        // 車子
+        // 繼承
+        let Car = {
+            brand: "",
+            model: "",
+            year: 0,
+            color: "",
+            run: function() {
+                console.log("The car is running");
+            },
+            stop: function() {
+                console.log("The car has stopped");
+            }
+        };
+        // toyota 車子
+        let ToyotaCar = Object.create(Car);
+        ToyotaCar.brand = "Toyota";
+        ToyotaCar.model = "Corolla";
+        ToyotaCar.year = 2020;
+        ToyotaCar.color = "Red";
+        ToyotaCar.run = function() {
+            console.log("0-100km/h in 10 seconds");
+        };
+        let HondaCar = Object.create(Car);
+        HondaCar.brand = "Honda";
+        HondaCar.model = "Civic";
+        HondaCar.year = 2021;
+        HondaCar.color = "Blue";
+        HondaCar.run = function() {
+            console.log("0-100km/h in 8 seconds");
+        };
+
+
+        document.getElementById("demo1").innerHTML = student.name;
+        document.getElementById("demo2").innerHTML = student.age;
+    </script>
+</body>
+</html>
