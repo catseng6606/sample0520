@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let ary = [true, false,true, false]; // [0] = true , [1] = false , [2] = true , [3] = false
+        let result = ary[0] && ary[2]; // false
+        // and true && true = true 
+        // and true && false = false
+        // and false && true = false
+        // and false && false = false
+        result = ary[1] || ary[3]; // true
+        // or true || true = true
+        // or true || false = true
+        // or false || true = true
+        // or false || false = false
+        alert (result); 
+    </script>
+</body>
+</html>
