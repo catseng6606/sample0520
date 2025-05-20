@@ -1,5 +1,17 @@
 # Install Docker
 
+## Window
+
+### 安裝 WSL 2
+
+### 安裝 Docker Desktop
+
+## MacOs
+
+### 安裝 Intel Docker Desktop
+
+### 安裝 Apple Silicon Docker Desktop
+
 ## Kali
 
 ### Kali 安裝 Docker
