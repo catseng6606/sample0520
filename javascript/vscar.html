@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        
+        // TODO: VS Two cars
+        // 1. Car1 : Toyota Corolla Car2： Honda Civic，屬性包含價格，年份，里程數，保養廠距離，得分
+        // 2. 建立兩個物件，分別為Toyota Corolla和Honda Civic
+        // 3. 使用物件的屬性來比較兩輛車的價格，年份和里程數，保養廠距離
+        // 4. 用Array來存放這兩輛車的物件
+        // 5. 根據得分高低決定買哪一台
+
+        let car1 = {
+            brand: "Toyota",
+            model: "Corolla",
+            price: 20000,
+            year: 2020,
+            mileage: 30000,
+            serviceDistance: 5,
+            score: 0
+        };
+        let car2 = {
+            brand: "Honda",
+            model: "Civic",
+            price: 22000,
+            year: 2021,
+            mileage: 25000,
+            serviceDistance: 10,
+            score: 0
+        };
+
+        let cars = [car1, car2];
+        // 計算得分
+        // 比較價格，價格越低得分越高
+        if (cars[0].price < cars[1].price) {
+            cars[0].score += 1;
+        } else {
+            cars[1].score += 1;
+        }
+        // 比較年份
+        if (cars[0].year < cars[1].year) {
+            cars[0].score += 1;
+        } else {
+            cars[1].score += 1;
+        }
+        // 比較里程數，里程數越少得分越高
+        if (cars[0].mileage < cars[1].mileage) {
+            cars[0].score += 1;
+        } else {
+            cars[1].score += 1;
+        }
+        // 比較保養廠距離，距離越近得分越高
+        if (cars[0].serviceDistance < cars[1].serviceDistance) {
+            cars[0].score += 1;
+        } else {
+            cars[1].score += 1;    
+        }
+        // 得分高低決定買哪一台
+        if (cars[0].score > cars[1].score) {
+            alert("買 " + cars[0].brand + " " + cars[0].model + "，得分：" + cars[0].score);
+        } else if (cars[0].score < cars[1].score) {
+            alert("買 " + cars[1].brand + " " + cars[1].model + "，得分：" + cars[1].score);
+        } else {
+            alert("兩台車得分相同，無法決定");
+        }
+     </script>
+</body>
+</html>
