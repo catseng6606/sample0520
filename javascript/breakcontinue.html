@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]; // 0 - 9
+        let count = numbers.length;
+        // continue 跳過本次迴圈
+        // break 跳出迴圈
+        for (let i = 0; i < count; i++) { // 初始 ; 條件 ; 更新
+            if (numbers[i] % 2 == 0) { // 偶數
+                document.write(numbers[i] + "是偶數<br>");
+                continue; // 跳過本次迴圈
+            } else {
+                document.write(numbers[i] + "是奇數<br>");  
+            }            
+        }
+  
+
+    </script>
+</body>
+</html>
