@@ -31,6 +31,9 @@ sudo usermod -aG docker $USER
 newgrp docker
 ```
 
+
+
+
 ### 執行 dcoker
 ``` bash
 docker images

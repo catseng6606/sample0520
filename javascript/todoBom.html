@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="title" name="title" class="title">">>Week Work</h1>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        // TODO: 介紹 BOM (Browser Object Model)
+        // 1. window 物件 與 範例
+        console.log('window');
+        // window.open() 與 window.close() 與範例
+        // window.prompt() 與範例，輸入對話框
+        // window.confirm() 與範例確認對話框
+        // window.alert() 與範例
+        console.log('window 物件的屬性:', window.innerWidth, window.innerHeight);
+        console.log('window 物件的屬性:', window.outerWidth, window.outerHeight);
+        console.log('window 物件的屬性:', window.screenX, window.screenY);
+        console.log('window 物件的屬性:', window.scrollX, window.scrollY);
+        console.log('window 物件的屬性:', window.location.href);
+        // 2. navigator 物件 與 範例
+        console.log('navigator');
+        console.log('User-Agent:', window.navigator.userAgent);
+        console.log('應用程式名稱:', window.navigator.appName);
+        console.log('應用程式版本:', window.navigator.appVersion);
+        console.log('作業系統平台:', window.navigator.platform);
+        console.log('Cookie 已啟用:', window.navigator.cookieEnabled);
+        console.log('瀏覽器是否連線:', window.navigator.onLine);
+        // 3. location 物件 與 範例
+        console.log('location');
+        console.log(window.location.href);      // 輸出: https://www.example.com:8080/path/to/page.html?name=John#top
+        console.log(window.location.protocol);  // 輸出: https:
+        console.log(window.location.hostname);  // 輸出: www.example.com
+        console.log(window.location.port);      // 輸出: 8080
+        console.log(window.location.pathname);  // 輸出: /path/to/page.html
+        console.log(window.location.search);    // 輸出: ?name=John
+        console.log(window.location.hash);      // 輸出: #top
+        // 4. history 物件 與 範例
+        console.log('history');
+        console.log('歷史紀錄長度:', window.history.length);
+        console.log('當前網址:', window.history.state);
+        console.log('前一個網址:', window.history.previous);
+        // window.history.back(); // 返回上一頁
+        // window.history.forward(); // 前進一頁
+        // window.history.go(-1); // 返回上一頁
+        // window.history.go(1); // 前進一頁
+        // 5. screen 物件 與 範例
+        console.log('screen');
+        console.log('螢幕總寬度:', window.screen.width, 'px');
+        console.log('螢幕總高度:', window.screen.height, 'px');
+        console.log('螢幕可用寬度:', window.screen.availWidth, 'px');
+        console.log('螢幕可用高度:', window.screen.availHeight, 'px');
+        // 6. document 物件 與 範例
+        console.log('document');
+        console.log('文件標題:', document.title);
+        console.log('文件網址:', document.URL);
+        console.log('文件路徑:', document.location.pathname);
+        console.log('文件大小:', document.body.scrollWidth, 'px');
+        console.log('文件高度:', document.body.scrollHeight, 'px');
+        console.log('文件內容:', document.getElementsByTagName('body')[0].innerHTML);
+        console.log('文件內容:', document.getElementsByName('title')[0].innerHTML);
+        console.log('文件內容:', document.getElementsByClassName('title')[0].innerHTML);
+        console.log('文件內容:', document.getElementById('title').innerHTML);
+        console.log('文件內容:', document.querySelector('#title').innerHTML);
+        console.log('文件內容:', document.querySelector('.title').innerHTML);
+        console.log('文件內容:', document.querySelector('h1').innerHTML);
+        
+
+
+
+
+    </script>
+</body>
+
+</html>
